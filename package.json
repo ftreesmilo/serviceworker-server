@@ -14,7 +14,8 @@
     "service",
     "worker",
     "serviceworker",
-    "server"
+    "server",
+    "webtorrent"
   ],
   "author": "ftreesmilo <58193105+ftreesmilo@users.noreply.github.com>",
   "license": "Apache-2.0",
