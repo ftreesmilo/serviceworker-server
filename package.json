@@ -1,5 +1,5 @@
 {
-  "name": "sw-server",
+  "name": "serviceworker-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ftreesmilo/sw-server.git"
+    "url": "git+https://github.com/ftreesmilo/serviceworker-server.git"
   },
   "keywords": [
     "service",
@@ -20,9 +20,9 @@
   "author": "ftreesmilo <58193105+ftreesmilo@users.noreply.github.com>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/ftreesmilo/sw-server/issues"
+    "url": "https://github.com/ftreesmilo/serviceworker-server/issues"
   },
-  "homepage": "https://github.com/ftreesmilo/sw-server#readme",
+  "homepage": "https://github.com/ftreesmilo/serviceworker-server#readme",
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/eslint-parser": "^7.18.2",
