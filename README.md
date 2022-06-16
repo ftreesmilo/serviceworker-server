@@ -17,16 +17,16 @@ You can stream the file contents through your serviceworker, giving the resource
 
 ```js
 // serviceworker.js
-import { swserve } from 'serviceworker-server';
-import { match, handle } from 'serviceworker-server/lib/impl/webtorrent/sw.js'
+import { swserve } from 'serviceworker-server/lib/worker.js';
+import { match, handle } from 'serviceworker-server/lib/impl/webtorrent/wt-worker.js'
 
 swserve({ match, handle });
 ```
 
 ```js
 // client.js with a webtorrent instance in scope as `client`
-import { clientserve } from 'serviceworker-server';
-import { match, makeHandle } from 'serviceworker-server/lib/impl/webtorrent/client.js'
+import { clientserve } from 'serviceworker-server/lib/client.js';
+import { match, makeHandle } from 'serviceworker-server/lib/impl/webtorrent/wt-client.js'
 
 clientserve({ match, handle: makeHandle(client) });
 ```
