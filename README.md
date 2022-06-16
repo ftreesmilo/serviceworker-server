@@ -13,14 +13,16 @@ In your site you've made a file that exists in
 
 that you would like the user to download.
 
-You can stream the file contents through your serviceworker, giving the resource a friendly URL to your site. There is a library alreeady that handles serving files out of a downloaded torrent through a webtorrent client on the page.
+You can stream the file contents through your serviceworker, giving the resource
+a friendly URL to your site. There is a library already that handles serving
+files out of a downloaded torrent through a webtorrent client on the page.
 
 ```js
 // serviceworker.js
 import { swserve } from 'serviceworker-server/lib/worker.js';
-import { match, handle } from 'serviceworker-server/lib/impl/webtorrent/wt-worker.js'
+import { match } from 'serviceworker-server/lib/impl/webtorrent/wt-worker.js'
 
-swserve({ match, handle });
+swserve({ match });
 ```
 
 ```js
@@ -30,3 +32,5 @@ import { match, makeHandle } from 'serviceworker-server/lib/impl/webtorrent/wt-c
 
 clientserve({ match, handle: makeHandle(client) });
 ```
+
+## Implementing your own library
