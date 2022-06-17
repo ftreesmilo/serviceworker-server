@@ -37,6 +37,7 @@
   "dependencies": {
     "debug": "^4.3.4",
     "mime": "^3.0.0",
-    "range-parser": "^1.2.1"
+    "range-parser": "^1.2.1",
+    "readable-web-to-node-stream": "^3.0.2"
   }
 }
